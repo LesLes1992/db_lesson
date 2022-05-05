@@ -21,5 +21,5 @@ ia.books.create(title: "Foundation")
 ia.books.create(title: "I, Robot")
 
 
-put Model.count
+
 
