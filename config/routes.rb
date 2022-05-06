@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   end
   
   resources :books
+
+  resources :foo
   root 'books#index'
   # get 'books', to: 'books#index'
   # get 'books/new', to:'books#new'
