@@ -12,6 +12,10 @@ class BooksController < ApplicationController
   def show
   end
 
+  def new
+    @book = Book.new
+  end
+  
   def create
     book = Book.create!(book_params)
     redirect_to book
@@ -27,10 +31,6 @@ class BooksController < ApplicationController
     redirect_to books_path
   end
 
-
-  def new
-    @book = Book.new
-  end
 
   def edit
   end
